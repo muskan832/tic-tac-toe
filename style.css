@@ -76,9 +76,22 @@ h1{
     color: #FFA500;
 }
 
+.game-credit {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+}
+.game-credit a {
+    color: #194a7a;
+    text-decoration: none;
+}
+
 @keyframes glow {
     0% { box-shadow: 0 0 5px #4CAF50; }
     50% { box-shadow: 0 0 20px #4CAF50; }
     100% { box-shadow: 0 0 5px #4CAF50; }
 }
+
 
