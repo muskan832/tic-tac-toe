@@ -1,0 +1,84 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: #a3b7ca;
+    text-align:center;
+}
+
+h1{
+    color:#194a7a;
+    font-size: 6vmin;
+    margin-top: 4vmin;
+    margin-bottom: 2vmin;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height:60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height:18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    font-size: 8vmin;
+    color:#194a7a;
+    background-color: #e1e8ed;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.reset-btn{
+    margin-top: 3vmin;
+    padding: 1.5vmin 3vmin;
+    font-size: 4vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    background-color: #194a7a;
+    color: white;
+    cursor: pointer;
+}
+
+.box.win {
+    background-color: #4CAF50;
+    color: white;
+    animation: glow 1s infinite;
+}
+
+.box:active {
+    transform: scale(0.9);
+}
+
+.msg {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: pop 0.5s ease;
+}
+.msg.draw {
+    color: #FFA500;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #4CAF50; }
+    50% { box-shadow: 0 0 20px #4CAF50; }
+    100% { box-shadow: 0 0 5px #4CAF50; }
+}
+
